@@ -52,10 +52,3 @@ npm run dev
 # Build para produção
 npm run build
 ```
-
-### 🌟 Próximas Funcionalidades
-- [ ] Zoom e rotação 360° dos tênis
-- [ ] Comparação lado a lado de modelos
-- [ ] Favoritos e histórico de visualização
-- [ ] Informações técnicas dos produtos
-- [ ] Integração com sistema de carrinho
