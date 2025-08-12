@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nike Air - Sistema de Visualização de Tênis
 
-## Getting Started
+## Funcionalidades Implementadas
 
-First, run the development server:
+### 🎯 Sistema de Navegação entre Modelos
+- **Navegação entre modelos**: Use as setas esquerda e direita para alternar entre os diferentes modelos de tênis
+- **Seleção de cores**: Clique nos botões de cor para visualizar diferentes variações do modelo selecionado
+- **Transições suaves**: Animações fluidas entre as mudanças de modelo e cor
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 🏃‍♂️ Modelos Disponíveis
+1. **Air Jordan 1 Low SE** - 6 variações de cor
+2. **Air Jordan 1 Mid SE** - 6 variações de cor  
+3. **Nike Dunk Low By You** - 5 variações de cor
+
+### 🎨 Como Usar
+1. **Trocar de modelo**: Clique nas setas `←` e `→` para navegar entre os modelos
+2. **Trocar de cor**: Clique nos botões circulares coloridos para ver diferentes variações
+3. **Visualização**: O tênis será exibido automaticamente com a cor selecionada
+
+### 🚀 Tecnologias Utilizadas
+- **Next.js 15** - Framework React com SSR
+- **Framer Motion** - Animações e transições
+- **Tailwind CSS** - Estilização responsiva
+- **React Icons** - Ícones da interface
+
+### 📁 Estrutura do Projeto
+```
+src/
+├── app/
+│   └── page.js          # Página principal com lógica de navegação
+├── components/
+│   ├── colorPicker.jsx  # Componente de seleção de cores e modelos
+│   └── ...              # Outros componentes
+└── data/
+    └── shoesData.js     # Configuração dos modelos e cores
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🎭 Animações
+- **Carregamento inicial**: Animação de entrada com fade-in
+- **Transições de modelo**: Movimento suave entre diferentes tênis
+- **Seleção de cor**: Mudança instantânea com efeito visual
+- **Componentes**: Aparição sequencial dos elementos da interface
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🔧 Desenvolvimento
+```bash
+# Instalar dependências
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Executar em desenvolvimento
+npm run dev
 
-## Learn More
+# Build para produção
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🌟 Próximas Funcionalidades
+- [ ] Zoom e rotação 360° dos tênis
+- [ ] Comparação lado a lado de modelos
+- [ ] Favoritos e histórico de visualização
+- [ ] Informações técnicas dos produtos
+- [ ] Integração com sistema de carrinho
